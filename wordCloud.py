@@ -12,7 +12,7 @@ url = 'https://yourAddressOnTheDdfFile/pdf'
 
 def downloadPDF(url):
     file = wget.download(url, "C:\yourHomeDirectoryForSaveFile.pdf")
-#use function downloadPDF
+#downloadPDF(url)
 
 convertPDFtoTXT = extract_text('C:\yourHomeDirectoryForSaveFile.pdf')
 fileTxt = open(f"fileTxt.txt", "w+", encoding='UTF-8')
